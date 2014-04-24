@@ -21,7 +21,7 @@ var MapsLib = {
 
   //the encrypted Table ID of your Fusion Table (found under File => About)
   //NOTE: numeric IDs will be depricated soon
-  fusionTableId:      "1rIVXddgoEcifhHdM0AfUdTaOekMdMSypd6Y2rEZ0",
+  fusionTableId:      "1jLVl_5iM621LDaBGhbaNsLZPbq9QjWh2N0msu0x6",
 
   //*New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/
   //*Important* this key is for demonstration purposes. please register your own.
@@ -30,7 +30,7 @@ var MapsLib = {
   //name of the location column in your Fusion Table.
   //NOTE: if your location column name has spaces in it, surround it with single quotes
   //example: locationColumn:     "'my location'",
-  locationColumn:     "city_state_zip",
+  locationColumn:     "address_city_state_zip",
 
   map_centroid:       new google.maps.LatLng(39.50, -98.35), //center that your map defaults to
   locationScope:      "",      //geographical area appended to all address searches
@@ -273,7 +273,7 @@ var MapsLib = {
   //------results list-----
   
   getList: function(whereClause) {
-  var selectColumns = "tech,city_state_zip";
+  var selectColumns = "store,address_city_state_zip";
   MapsLib.query(selectColumns, whereClause, "MapsLib.displayList");
   },
   
