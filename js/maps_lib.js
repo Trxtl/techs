@@ -21,7 +21,7 @@ var MapsLib = {
 
   //the encrypted Table ID of your Fusion Table (found under File => About)
   //NOTE: numeric IDs will be depricated soon
-  fusionTableId:      "1eByHsXF-NLr4br4n-emekq_t1Ntggul4sEI6G-YF",
+  fusionTableId:      "1rIVXddgoEcifhHdM0AfUdTaOekMdMSypd6Y2rEZ0",
 
   //*New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/
   //*Important* this key is for demonstration purposes. please register your own.
@@ -273,7 +273,7 @@ var MapsLib = {
   //------results list-----
   
   getList: function(whereClause) {
-  var selectColumns = "store,address_city_state_zip";
+  var selectColumns = "tech,city_state_zip";
   MapsLib.query(selectColumns, whereClause, "MapsLib.displayList");
   },
   
