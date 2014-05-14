@@ -30,7 +30,7 @@ var MapsLib = {
   //name of the location column in your Fusion Table.
   //NOTE: if your location column name has spaces in it, surround it with single quotes
   //example: locationColumn:     "'my location'",
-  locationColumn:     "city_state_zip",
+  locationColumn:     "City/State/Zip",
 
   map_centroid:       new google.maps.LatLng(39.50, -98.35), //center that your map defaults to
   locationScope:      "",      //geographical area appended to all address searches
@@ -273,7 +273,7 @@ var MapsLib = {
   //------results list-----
   
   getList: function(whereClause) {
-  var selectColumns = "tech,city_state_zip";
+  var selectColumns = "Tech,City/State/Zip";
   MapsLib.query(selectColumns, whereClause, "MapsLib.displayList");
   },
   
